@@ -1,0 +1,120 @@
+/* aside Section */
+aside {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+}
+
+aside ul {
+  list-style: none;
+  padding: 50px;
+}
+
+aside a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+aside li {
+  margin-bottom: 10px;
+}
+
+#btnContainer {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#openBtn,
+#closeBtn {
+  cursor: pointer;
+}
+
+#closeBtn {
+  display: none;
+}
+
+/* END aside Section */
+
+/* Search Section */
+#searchSection {
+  display: none;
+}
+
+/* End Search Section */
+
+/* Home Section */
+#mainDiv #layer {
+  width: 100%;
+  height: 0px;
+  background-color: #f9f6f6ca;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s;
+}
+
+#mainDiv:hover #layer {
+  height: 100%;
+}
+
+#mainDiv {
+  cursor: pointer;
+}
+
+#areaIcon {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+#maxLines {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+/* END Home Section */
+
+/* Contact Section */
+#contactUsSection {
+  display: none
+}
+
+/* END Contact Section */
+
+/* loader */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid lightblue;
+  border-right-color: orange;
+  animation: l2 1s infinite linear;
+}
+
+@keyframes l2 {
+  to {
+    transform: rotate(1turn)
+  }
+}
+
+#loader {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+}
+
+/* END loader */

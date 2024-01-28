@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-dark bg-opacity-25">
+    <div id="loader" class="bg-dark">
+      <div class="loader"></div>
+    </div>
+
+    <!-- side menu -->
+    <aside>
+      <div id="sideMenu" class="bg-dark">
+        <div class="d-flex">
+          <ul id="list">
+            <li class="wow">
+              <a id="SearchLink" href="#">Search</a>
+            </li>
+            <li class="wow" data-wow-delay="0.1s">
+              <a id="Categories" href="#">Categories</a>
+            </li>
+            <li class="wow" data-wow-delay="0.2s">
+              <a id="Area" href="#">Area</a>
+            </li>
+            <li class="wow" data-wow-delay="0.3s">
+              <a id="Ingredients" href="#">Ingredients</a>
+            </li>
+            <li class="wow" data-wow-delay="0.4s">
+              <a id="ContactUs" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="btnContainer" class="fs-1 bg-light">
+        <i id="openBtn" class="fa-solid fa-bars"></i>
+        <i id="closeBtn" class="fa-solid fa-xmark"></i>
+      </div>
+    </aside>
+    <!-- end side menu -->
+
+    <!-- Search Section -->
+    <section id="searchSection">
+      <div class="container">
+        <form class="row p-5">
+          <div class="col-md-6">
+            <input
+              type="text"
+              name=""
+              id="searchByName"
+              class="form-control"
+              placeholder="Search By Name"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              name=""
+              id="searchByLetter"
+              class="form-control"
+              placeholder="Search By First Letter"
+              maxlength="1"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End Search Section -->
+
+    <!-- Home Section -->
+    <section id="homeSection">
+      <div class="container">
+        <div id="displayCategory" class="row"></div>
+      </div>
+    </section>
+    <!-- END Home Section -->
+
+    <!-- contact section -->
+    <section id="contactUsSection">
+      <div class="container">
+        <div class="row p-5">
+          <form class="col-md-6">
+            <input
+              id="nameInput"
+              type="text"
+              class="form-control mb-2"
+              placeholder="Enter Your Name"
+            />
+            <p id="nameInputMess" class="bg-danger rounded-2 d-none text-white">
+              Only Letters are allowed
+            </p>
+            <input
+              id="phoneInput"
+              type="number"
+              class="form-control mb-2"
+              placeholder="Enter Your Phone"
+            />
+            <p
+              id="phoneInputMess"
+              class="bg-danger rounded-2 d-none text-white"
+            >
+              Enter a Vaild Phone Number
+            </p>
+
+            <input
+              id="passwordInput"
+              type="password"
+              class="form-control mb-2"
+              placeholder="Enter Your Password"
+            />
+            <p
+              id="passwordInputMess"
+              class="bg-danger rounded-2 d-none text-white"
+            >
+              Enter a Vaild Password *at least 8 characters , at least 1 letter
+            </p>
+          </form>
+          <form class="col-md-6">
+            <input
+              id="emailInput"
+              type="text"
+              class="form-control mb-2"
+              placeholder="Enter Your E-Mail"
+            />
+            <p
+              id="emailInputMess"
+              class="bg-danger rounded-2 d-none text-white"
+            >
+              Email Not Vaild *example@yyy.zzz
+            </p>
+
+            <input
+              id="ageInput"
+              type="number"
+              class="form-control mb-2"
+              placeholder="Enter Your Age"
+            />
+            <p id="ageInputMess" class="bg-danger rounded-2 d-none text-white">
+              Enter Vaild Age
+            </p>
+
+            <input
+              id="repasswordInput"
+              type="password"
+              class="form-control mb-2"
+              placeholder="Repassword"
+            />
+            <p
+              id="RepasswordInputMess"
+              class="bg-danger rounded-2 d-none text-white"
+            >
+              password not match
+            </p>
+          </form>
+          <div class="text-center mt-5">
+            <button class="btn btn-outline-danger">submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end contact section -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
