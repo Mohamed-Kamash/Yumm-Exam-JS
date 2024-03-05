@@ -254,9 +254,7 @@ async function getMealDetailsById(id = 52874) {
   let values = Object.values(myMeal);
 
   let amout = values.slice(29, 48);
-  let rec = values.slice(9, 28);
-  console.log(amout);
-  console.log(rec);
+  let rec = values.slice(9, 28).filter((data)=>data.split(" ").slice(0,19).join(" "))
 
   let cartona = `<div class="col-md-4 p-3">
     <div>
